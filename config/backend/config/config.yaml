@@ -1,0 +1,9 @@
+database:
+    read:
+        host: db
+        user: user
+        password: password
+    write:
+        host: db
+        user: user
+        password: password

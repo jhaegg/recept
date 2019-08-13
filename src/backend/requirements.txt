@@ -1,0 +1,4 @@
+cython
+hypercorn[uvloop]
+aiomysql
+pyyaml

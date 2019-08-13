@@ -1,0 +1,4 @@
+db/
+build/webapp/*
+!build/webapp/.gitkeep
+!build/webapp/index.html

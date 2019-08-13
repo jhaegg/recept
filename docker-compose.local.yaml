@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+    webapp:
+        image: recept
+        depends_on:
+            - db
+        environment:
+            - DATABASE_READ_USER=
+            - DATABASE_READ_PASSWORD=
+            - DATABASE_WRITE_USER=
+            - DATABASE_WRITE_PASSWORD=
+        ports:
+            - 1024:1024
+    db:
+        image: mariadb
+        volumes:
+            - "$PWD/db:/var/lib/mysql"
